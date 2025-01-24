@@ -21,7 +21,7 @@ return {
     workspaces = {
       {
         name = 'second',
-        path = '~/Documents/Notes/Second-Brain/',
+        path = '~/Second-Brain/',
       },
     },
 
