@@ -841,6 +841,7 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'catppuccin/nvim',
     name = 'catppuccin',
+    enabled = false,
     priority = 900,
     config = function()
       require('catppuccin').setup {
@@ -866,9 +867,12 @@ require('lazy').setup({
     lazy = false,
     priority = 1000,
     opts = {
-      style = 'night',
+      style = 'moon',
       light_style = 'day',
     },
+    config = function()
+      vim.cmd.colorscheme 'tokyonight'
+    end,
   },
 
   -- Highlight todo, notes, etc in comments
